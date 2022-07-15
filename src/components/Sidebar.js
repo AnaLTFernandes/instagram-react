@@ -35,9 +35,28 @@ function PerfisRecomendados() {
     ]);
 }
 
-function Sugestoes() {
+function Perfis() {
     let canais = PerfisRecomendados();
 
+    return (
+        <div class="canais">
+            {canais.map(canal => 
+                <div>
+                    <div class="canal">
+                        <img src={canal.img} alt={canal.nome}/>
+                        <div>
+                            <p>{canal.nome}</p>
+                            <h2>{canal.status}</h2>
+                        </div>
+                    </div>
+                    <p>Seguir</p>
+                </div>
+            )}
+        </div>
+    );
+}
+
+function Sugestoes() {
     return (
         <div class="sugestoes">
             <div class="parte-1">
@@ -45,20 +64,7 @@ function Sugestoes() {
                 <h1>Ver tudo</h1>
             </div>
 
-            <div class="canais">
-                {canais.map(canal => 
-                    <div>
-                        <div class="canal">
-                            <img src={canal.img} alt={canal.nome}/>
-                            <div>
-                                <p>{canal.nome}</p>
-                                <h2>{canal.status}</h2>
-                            </div>
-                        </div>
-                        <p>Seguir</p>
-                    </div>
-                )}
-            </div>
+            <Perfis />
         </div>
     );
 }
