@@ -19,7 +19,8 @@ export default function Stories() {
                 <Storie 
                     image={"./img/stories/" + canal + " 1.svg"} 
                     alt={canal} 
-                    nome={canal}/>
+                    nome={canal}
+                />
             )}
                 
             <ion-icon class="icone" name="chevron-forward-circle"></ion-icon>

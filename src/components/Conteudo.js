@@ -7,6 +7,7 @@ export default function Conteudo() {
         <div class="conteudo">
             <div class="postagens">
                 <Stories />
+                <Posts />
             </div>
         </div>
     );
