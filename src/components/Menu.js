@@ -1,13 +1,13 @@
 function BarraTopoLogo(){
     return (
         <div class="logo">
-            <a class="icon-logo" href="https://www.instagram.com" target="_blank">
+            <a class="icon-logo" href="https://www.instagram.com" target="_blank" rel="noreferrer">
                 <ion-icon class="icon-logo" name="logo-instagram"></ion-icon>
             </a>
 
             <div class="linha-vertical"></div>
 
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                 <img src="./img/logo.png" alt="instagram"/>
             </a>
         </div>

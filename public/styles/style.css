@@ -1,4 +1,5 @@
-body {
+body,
+.root {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
@@ -197,9 +198,8 @@ input:focus {
 .post {
     margin-bottom: 60px;
     width: 614px;
-    height: 749px;
+    height: auto;
     border-radius: 3px;
-    /* blend??? */
     background-color: #ffffff;
     border: 1px solid #DBDBDB;
     padding-bottom: 15px;

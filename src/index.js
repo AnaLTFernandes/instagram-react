@@ -1,11 +1,5 @@
 import ReactDOM from 'react-dom';
 
-import Menu from './components/Menu';
-
-function App() {
-    return (
-        <Menu />
-    );
-}
+import App from './components/App';
 
 ReactDOM.render(<App />, document.querySelector('body'));
