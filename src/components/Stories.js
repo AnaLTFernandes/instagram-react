@@ -1,7 +1,7 @@
 function Storie(props) {
     return (
         <div>
-            <img class="fundo" src="./img/stories/stories_background.jpg" />
+            <img class="fundo" src="./img/stories/stories_background.jpg" alt={props.alt} />
             <img class="foto-perfil" src={props.image} alt={props.alt} />
             <p>{props.nome}</p>
         </div>

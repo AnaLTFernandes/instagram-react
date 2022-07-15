@@ -3,7 +3,7 @@ function Postagens() {
         {nome:"meowed",
          imagem:"./img/stories/meowed 1.svg",
          instagram:"https://www.instagram.com/meowed/",
-         postagem:"./img/post/gato-telefone 1.svg",
+         postagemIMG:"./img/post/gato-telefone 1.svg",
          altPostagem:"gato",
          visualizacaoIMG: "./img/stories/respondeai 1.svg",
          visualizacaoCanal:"respondeai",
@@ -12,7 +12,7 @@ function Postagens() {
         {nome:"barked",
          imagem:"./img/stories/barked 1.svg",
          instagram:"https://www.instagram.com/barked/",
-         postagem:"./img/post/dog 1.svg",
+         postagemIMG:"./img/post/dog 1.svg",
          altPostagem:"doguinho",
          visualizacaoIMG:"./img/post/adorableanimals 2.svg",
          visualizacaoCanal:"adorable_animals",
@@ -21,7 +21,15 @@ function Postagens() {
         {nome:"meowed",
          imagem:"./img/stories/meowed 1.svg",
          instagram:"https://www.instagram.com/meowed/",
-         postagem:"./img/post/gato 3.jpg",
+         postagemVideo:"./video/video.mp4",
+         visualizacaoIMG:"./img/stories/respondeai 1.svg",
+         visualizacaoCanal:"respondeai",
+         visualizacaoNumero: "31.890"
+        },
+        {nome:"meowed",
+         imagem:"./img/stories/meowed 1.svg",
+         instagram:"https://www.instagram.com/meowed/",
+         postagemIMG:"./img/post/gato 3.jpg",
          altPostagem:"gato",
          visualizacaoIMG:"./img/stories/9gag 1.svg",
          visualizacaoCanal:"9gag",
@@ -61,7 +69,7 @@ function PostIcones() {
 function PostVisualizacao(props) {
     return (
         <div class="visualizacao">
-            <img src={props.imagem}/>
+            <img src={props.imagem} alt={props.canal}/>
             <p>Curtido por <b>{props.canal}</b> e <b>outras {props.quantidade} pessoas</b></p>
         </div>
     );
@@ -81,7 +89,10 @@ export default function Posts() {
                         link={canal.instagram}
                     />
                     
-                    <img src={canal.postagem} alt={canal.altPostagem}/>
+                    {(canal.postagemIMG !== undefined) 
+                        ? <img src={canal.postagemIMG} alt={canal.altPostagem}/>
+                        : <video src={canal.postagemVideo} controls="controls"/>
+                    }
 
                     <PostIcones />
 

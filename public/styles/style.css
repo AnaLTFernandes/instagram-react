@@ -1,5 +1,5 @@
 body,
-.root {
+.root > div {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
