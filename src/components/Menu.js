@@ -16,7 +16,8 @@ function BarraTopoLogo(){
 
 function BarraTopoIcons(){
     let iconsName = ["paper-plane-outline","compass-outline",
-        "heart-outline","person-outline"];
+        "heart-outline","person-outline"
+    ];
 
     return (
         <div class="icons">

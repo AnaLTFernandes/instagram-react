@@ -1,4 +1,6 @@
-function Postagens() {
+import React from 'react';
+
+function postagens() {
     return ([
         {nome:"meowed",
          imagem:"./img/stories/meowed 1.svg",
@@ -54,14 +56,23 @@ function PostTopo(props) {
 }
 
 function PostIcones() {
+    const [curtir, setCurtir] = React.useState('-outline');
+    const [salvar, setSalvar] = React.useState('-outline');
+
     return (
         <div class="icones-post">
             <div>
-                <ion-icon class="heart" name="heart-outline"></ion-icon>
+                <ion-icon class={"md hydrated heart" + curtir} name={"heart" + curtir}
+                    onClick={() => (curtir === '') ? setCurtir('-outline') : setCurtir('')}>
+                </ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
-            <ion-icon class="icon bookmark" name="bookmark-outline"></ion-icon>
+
+            <ion-icon class={"md hydrated icon bookmark" + salvar} 
+                      name={"bookmark" + salvar}
+                      onClick={() => (salvar === '') ? setSalvar('-outline') : setSalvar('')}>
+            </ion-icon>
         </div>
     );
 }
@@ -76,7 +87,7 @@ function PostVisualizacao(props) {
 }
 
 export default function Posts() {
-    let arrayPost = Postagens();
+    let arrayPost = postagens();
 
     return (
         <div class="coluna-posts">
