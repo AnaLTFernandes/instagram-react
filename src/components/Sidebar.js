@@ -1,8 +1,8 @@
 function Usuario(props) {
     return (
-        <div class="usuario">
+        <div className="usuario">
             <img src={props.img} alt={props.alt}/>
-            <div class="txt">
+            <div className="txt">
                 <p><b>{props.nomeUsuario}</b></p>
                 <p>{props.nome}</p>
             </div>
@@ -10,7 +10,7 @@ function Usuario(props) {
     );
 }
 
-function PerfisRecomendados() {
+function perfisRecomendados() {
     return ([
         {nome:"bad.vibes.memes",
          img:"./img/sidebar/badvibesmemes 1.svg",
@@ -36,13 +36,13 @@ function PerfisRecomendados() {
 }
 
 function Perfis() {
-    let canais = PerfisRecomendados();
+    const canais = perfisRecomendados();
 
     return (
-        <div class="canais">
+        <div className="canais">
             {canais.map(canal => 
                 <div>
-                    <div class="canal">
+                    <div className="canal">
                         <img src={canal.img} alt={canal.nome}/>
                         <div>
                             <p>{canal.nome}</p>
@@ -58,8 +58,8 @@ function Perfis() {
 
 function Sugestoes() {
     return (
-        <div class="sugestoes">
-            <div class="parte-1">
+        <div className="sugestoes">
+            <div className="parte-1">
                 <p>Sugestões para você</p>
                 <h1>Ver tudo</h1>
             </div>
@@ -71,7 +71,7 @@ function Sugestoes() {
 
 function TextoInferior() {
     return (
-        <div class="txt-final">
+        <div className="txt-final">
             <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</p>
             <p>© 2021 INSTAGRAM DO FACEBOOK</p>
         </div>
@@ -81,7 +81,7 @@ function TextoInferior() {
 export default function Sidebar() {
 
     return (
-        <div class="sidebar">
+        <div className="sidebar">
 
             <Usuario
                 nome="Catana" 

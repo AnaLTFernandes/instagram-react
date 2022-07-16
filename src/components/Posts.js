@@ -42,8 +42,8 @@ function postagens() {
 
 function PostTopo(props) {
     return (
-        <div class="topo">
-            <div class="canal">
+        <div className="topo">
+            <div className="canal">
                 <img src={props.imagem} alt={props.alt}/>
                 
                 <a href={props.link} target="_blank" rel="noreferrer">
@@ -60,18 +60,19 @@ function PostIcones() {
     const [salvar, setSalvar] = React.useState('-outline');
 
     return (
-        <div class="icones-post">
+        <div className="icones-post">
             <div>
                 <ion-icon class={"md hydrated heart" + curtir} name={"heart" + curtir}
                     onClick={() => (curtir === '') ? setCurtir('-outline') : setCurtir('')}>
                 </ion-icon>
+
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
 
             <ion-icon class={"md hydrated icon bookmark" + salvar} 
-                      name={"bookmark" + salvar}
-                      onClick={() => (salvar === '') ? setSalvar('-outline') : setSalvar('')}>
+                name={"bookmark" + salvar}
+                onClick={() => (salvar === '') ? setSalvar('-outline') : setSalvar('')}>
             </ion-icon>
         </div>
     );
@@ -79,7 +80,7 @@ function PostIcones() {
 
 function PostVisualizacao(props) {
     return (
-        <div class="visualizacao">
+        <div className="visualizacao">
             <img src={props.imagem} alt={props.canal}/>
             <p>Curtido por <b>{props.canal}</b> e <b>outras {props.quantidade} pessoas</b></p>
         </div>
@@ -87,12 +88,12 @@ function PostVisualizacao(props) {
 }
 
 export default function Posts() {
-    let arrayPost = postagens();
+    const arrayPost = postagens();
 
     return (
-        <div class="coluna-posts">
+        <div className="coluna-posts">
             {arrayPost.map(canal =>
-                <div class="post">
+                <div className="post">
                     <PostTopo 
                         imagem={canal.imagem} 
                         alt={canal.nome} 

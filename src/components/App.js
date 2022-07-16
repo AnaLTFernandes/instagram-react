@@ -8,7 +8,7 @@ export default function App() {
             <Menu />
             <Conteudo />
 
-            <div class="borda-menu inferior"></div>
+            <div className="borda-menu inferior"></div>
             
             <MenuInferiorMobile />
         </div>
