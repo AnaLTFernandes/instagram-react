@@ -28,26 +28,30 @@ Você pode ver o projeto funcionando aqui: https://projeto7-instagram-react-zeta
 
 2. Instale as dependências:
 >```bash
->$ npm install #se você usa npm
+>#se você usa npm
+>$ npm install
 >```
 >
 ><p align="center">ou</p>
 >
 >```bash
->$ yarn #se você usa yarn
+>#se você usa yarn
+>$ yarn
 >```
 
 <br />
 
 3. Inicie o programa:
 >```bash
->$ npm start #se você usa npm
+>#se você usa npm
+>$ npm start
 >```
 >
 ><p align="center">ou</p>
 >
 >```bash
->$ yarn start #se você usa yarn
+>#se você usa yarn
+>$ yarn start
 >```
 
 <br />
