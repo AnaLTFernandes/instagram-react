@@ -63,7 +63,6 @@ Você pode ver o projeto funcionando aqui: https://projeto7-instagram-react-zeta
 ## :heavy_check_mark: Tecnologias utilizadas
 <img align="left" alt="css" height="25px" src="https://img.shields.io/badge/-CSS-blue?logo=css3&logoColor=white" />
 <img align="left" alt="react" height="25px" src="https://img.shields.io/badge/-React-5ED3F3?logo=react&logoColor=white" />
-<img align="left" alt="javascript" height="25px" src="https://img.shields.io/badge/React-icons-success" />
 
 
 <br />
