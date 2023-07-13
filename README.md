@@ -1,5 +1,7 @@
 # Instagram React clone
 
+![Badge Finalizado](https://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=success&style=for-the-badge)
+
 Página web com layout responsivo e inspirada na página principal da versão web do Instagram.
 
 <div align=center>
